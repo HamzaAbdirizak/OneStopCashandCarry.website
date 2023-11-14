@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>products</title>
+  <link rel="stylesheet" href="prac.css">
+  <script language="Javascript" src="javascript.js"></script>
+  <style>
+    body{
+ 
+ 
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: Light beige;
+
+
+ 
+}
+
+
+@media screen and (max-width:800px) {
+  *{
+ box-sizing: border-box;
+}
+}
+*{
+ box-sizing: border-box;
+}
+    
+  </style>
+</head>
+<body>
+  
+  <div id="topnav">
+    <a id="active"href="home.html">Home</a>
+
+    <a href="aboutUs.html">About Us</a>
+    <a href="support.html">Support</a>
+    <a href="contactUs.html">Contact Us</a>
+</div>
+
+  <h1 style="font-size: 56px; font-family:  Raleway, sans-serif;">Our Products</h1>
+
+
+<div>
+   <div class="imagerow">
+    <div class="imgcolumn">
+      <img src="images/lay's-brazillian-spicy-salsa.png" class="prodImg" alt="lays">
+      <p class="prodText">Big Packet of Lays<br>
+        Different kind of Flavours</p>
+        <p style="font-size: 24px;font-weight: bold;">R19.00 <br><button  onclick="addToCart('Lays', 19.00)"> Add</button></p>
+    </div>
+  <div class="imgcolumn" >
+     <img src="images/simba-steakhouse-beef.png"class="prodImg"  alt="simba">
+     <p class="prodText">Big Packet of Simba<br>
+      Different kind of Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R18.00 <br><button  onclick="addToCart('Simba', 18.00)"> Add</button></p>
+      
+  </div>
+  <div class="imgcolumn" >
+    <img src="images/doritos-flaming-hot-masala.png"class="prodImg"  alt="doritos-flaming-hot-masala">
+    <p class="prodText">Big Packet of Doritos<br>
+      Different kind of Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R18.00 <br><button  onclick="addToCart('Doritos', 18.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/Chippa-BBQ-300x300.png" class="prodImg" alt="Chippa-BBQ-300x300">
+    <p class="prodText">A bag of Chippa<br>
+      Different kind of Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R43.50 <br><button  onclick="addToCart('A bag of Chippa', 43.50)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/niknaks-flaming-hot.png" class="prodImg" alt="niknaks-flaming-hot">
+    <p class="prodText">A bag of Niknaks<br>
+      Different kind of Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R44.00 <br><button  onclick="addToCart('A bag of Niknaks', 44.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/spookies big.png" class="prodImg" alt="spookies">
+    <p class="prodText">A bag of Spookies(small)<br>
+      Different kind of Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R32.50 <br><button  onclick="addToCart('A bag of Spookies(small)', 32.50)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/sugar 10kg.png" class="prodImg" alt="sugar">
+    <p class="prodText">Sugar 10kg<br>
+      Best Quality White Sugar</p>
+      <p style="font-size: 24px;font-weight: bold;">R200.00 <br><button onclick="addToCart('White Sugar 10Kg', 200.00)" > Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/sugar 2.5kg.jpeg" class="prodImg" alt="sugar">
+    <p class="prodText">Sugar 2.5kg<br>
+    Best Quality White Sugar</p>
+      <p style="font-size: 24px;font-weight: bold;">R58.00 <br><button onclick="addToCart('White Sugar 2.5kg', 58.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/sugar 1kg.png" class="prodImg" alt="sugar">
+    <p class="prodText">Sugar 1kg<br>
+    Best Quality White Sugar</p>
+      <p style="font-size: 24px;font-weight: bold;margin-top: auto;margin-left: 10px;">R230.00 <br><button onclick="addToCart('White Sugar 1Kg Full', 230.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/sugar 500g.png" class="prodImg" alt="sugar">
+    <p class="prodText">Sugar 500g<br>
+    Best Quality White Sugar</p>
+      <p style="font-size: 24px;font-weight: bold;">R180.00 <br><button onclick="addToCart('White Sugar 500g Full', 180.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/fish oil.png" class="prodImg" alt="fish oil">
+    <p class="prodText">D lite Cooking Oil 2l<br>
+    Affordable and Quality Oil</p>
+      <p style="font-size: 24px;font-weight: bold;">R58.00 <br><button onclick="addToCart('D lite Cooking Oil 2l ', 58.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/Drypers.jpeg" class="prodImg" alt="nappies">
+    <p class="prodText">Drypers<br>
+    Different size of diapers</p>
+      <p style="font-size: 24px;font-weight: bold;">R175.00 <br><button onclick="addToCart('Drypers Diapers', 175.00)" > Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/pampers.jpeg" class="prodImg" alt="Pampers">
+    <p class="prodText">Pampers Jumbo Pack<br>
+      Different size of diapers</p>
+      <p style="font-size: 24px;font-weight: bold;">R230.00 <br><button onclick="addToCart('Pampers Jumbo Pack', 230.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/Huggies.png" class="prodImg" alt="Pampers">
+    <p class="prodText">Huggies Jumbo Pack<br>
+      Different size of diapers</p>
+      <p style="font-size: 24px;font-weight: bold;">R180.00 <br><button onclick="addToCart('Huggies Jumbo Pack', 180.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/bokomo weetbix.png" class="prodImg" alt="bokomo">
+    <p class="prodText">Bokomo 1kg<br>
+      Morning pleasure</p>
+      <p style="font-size: 24px;font-weight: bold;">R48.00 <br><button onclick="addToCart('Bokomo 1Kg', 48.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/kellogs 1kg corn flakes.png" class="prodImg" alt="kellogs">
+    <p class="prodText">Kellog's  Corn Falakes 1kg<br>
+      Morning pleasure</p>
+      <p style="font-size: 24px;font-weight: bold;">R65.00 <br><button onclick="addToCart('Kellogs  Corn Falakes 1kg', 65.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/Kellogs 400g.jpeg" class="prodImg" alt="kellogs">
+    <p class="prodText">Kellog's Corn Falakes 400g<br>
+      Morning pleasure</p>
+      <p style="font-size: 24px;font-weight: bold;">R45.00 <br><button onclick="addToCart('Kellogs  Corn Falakes 400g', 65.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/slab chocolate.png" class="prodImg" alt="slab">
+    <p class="prodText">Slab Chocolate Box<br>
+      Dark Wonderland</p>
+      <p style="font-size: 24px;font-weight: bold;">R172.00 <br><button onclick="addToCart('Slab Chocolate Box', 172.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/bar one small.jpg" class="prodImg" alt="Bar-one">
+    <p class="prodText">Bar-one Small<br>
+      Chocolate Endeavour</p>
+      <p style="font-size: 24px;font-weight: bold;">R83.00 <br><button onclick="addToCart('Bar-one Small', 83.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/smarrties small.jpg" class="prodImg" alt="Smarties">
+    <p class="prodText">Smarties Small<br>
+      Chocolate Endeavour</p>
+      <p style="font-size: 24px;font-weight: bold;">R83.00 <br><button onclick="addToCart('Smarties Small', 83.00)" > Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/lunch bar small.jpeg" class="prodImg" alt="lunch-bar">
+    <p class="prodText">Lunch-bar Small<br>
+      Chocolate Endeavour</p>
+      <p style="font-size: 24px;font-weight: bold;">R98.00 <br><button onclick="addToCart('Lunch-bar Small', 98.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/indomie hot spicy.jpg" class="prodImg" alt="noodle">
+    <p class="prodText">Indomie Hot and Spicy Box<br>
+     Eat with smile</p>
+      <p style="font-size: 24px;font-weight: bold;">R285.00 <br><button onclick="addToCart('Indomie Hot and spicy box', 285.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/indomie chicken.jpg" class="prodImg" alt="noodle">
+    <p class="prodText">Indomie Chicken Box<br>
+     Eat with smile</p>
+      <p style="font-size: 24px;font-weight: bold;">R220.00 <br><button onclick="addToCart('Indomie Chicken Box', 220.00)"> Add</button></p>
+  </div>
+ 
+  <div class="imgcolumn">
+   
+    <img src="images/jaya mie.jpeg" class="prodImg" alt="noodle">
+    <p class="prodText">Jaya Mie Box<br>
+     Eat with smile</p>
+      <p style="font-size: 24px;font-weight: bold;">R155.00 <br><button onclick="addToCart('Jaya Mie Box', 155.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/granpa.jpeg" class="prodImg" alt="granpa">
+    <p class="prodText">A box of Granpa<br>
+   Painfree</p>
+      <p style="font-size: 24px;font-weight: bold;">R69.00 <br><button onclick="addToCart('A box of Granpa', 69.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/MyLife_original.png" class="prodImg" alt="MyLife_original">
+    <p class="prodText">A bag of MyLife_original<br>
+   Morning Porridge</p>
+      <p style="font-size: 24px;font-weight: bold;">R85.00 <br><button onclick="addToCart('A bag of MyLife_original', 85.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/ariel.jpeg" class="prodImg" alt="washing powder">
+    <p class="prodText">Ariel<br>
+   Washing stains</p>
+      <p style="font-size: 24px;font-weight: bold;">R105.00 <br><button onclick="addToCart('Ariel', 105.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/toilet pink.jpeg" class="prodImg" alt="toiletpaper">
+    <p class="prodText">Spring Pink Toilet Paper 24pcs<br>
+   Nice tissue</p>
+      <p style="font-size: 24px;font-weight: bold;">R80.00 <br><button onclick="addToCart('Spring Pink Toilet Paper 24pcs', 80.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/twinsaver.png" class="prodImg" alt="toiletpaper">
+    <p class="prodText">Twinsaver 1ply 24pcs<br>
+   Nice tissue</p>
+      <p style="font-size: 24px;font-weight: bold;">R135.00 <br><button onclick="addToCart('Twinsaver 1ply 24pcs', 135.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/box eggs.jpeg" class="prodImg" alt="eggs">
+    <p class="prodText">A box of Eggs 30 dozens<br>
+   Quality Eggs</p>
+      <p style="font-size: 24px;font-weight: bold;">R460.00 <br><button onclick="addToCart('A box of Eggs 30cdozens', 400.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/apple bompie.jpeg" class="prodImg" alt="applebompie">
+    <p class="prodText">A box of Apple Bompie<br>
+   Bompie fantastic</p>
+      <p style="font-size: 24px;font-weight: bold;">R82.00 <br><button onclick="addToCart('A box of Apple Bompie', 82.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/apple creamy.jpeg" class="prodImg" alt="applebompie">
+    <p class="prodText">A box of Creamy Bompie<br>
+   Bompie fantastic</p>
+      <p style="font-size: 24px;font-weight: bold;">R85.00 <br><button onclick="addToCart('A box of Creamy Bompie', 85.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/polar round.png" class="prodImg" alt="applebompie">
+    <p class="prodText">5l Polar Round Ice Cream <br>
+   Absolute Ice Cream perfection</p>
+      <p style="font-size: 24px;font-weight: bold;">R75.00 <br><button onclick="addToCart('5l Polar Round Ice Cream', 75.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/coke500ml.jpg" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">500ml Coke<br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R10.00 <br><button onclick="addToCart('500ml bottle ', 10.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/can coke.png" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Can Coke Loose<br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R12.00 <br><button onclick="addToCart('Can Coke Loose', 12.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/monster drink.jpeg" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Monster Energy Drink Loose<br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R17.00 <br><button onclick="addToCart('Monster Energy Drink', 17.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/energade.png" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Energade Loose<br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R11.00 <br><button onclick="addToCart('Energade Loose', 11.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/powerade-mountain-blast desktop.webp" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Powerade Loose<br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R13.00 <br><button onclick="addToCart('Powerade Loose', 13.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/toros.webp" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Toros <br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R47.00 <br><button onclick="addToCart('Toros', 47.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/fizzer.jpeg" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Fizzer<br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R57.00 <br><button onclick="addToCart('Fizzer', 57.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/Truffels.jpeg" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Truffels 1kg<br>
+  Wonder Taste</p>
+      <p style="font-size: 24px;font-weight: bold;">R90.00 <br><button onclick="addToCart('Truffels 1Kg', 90.00)"> Add</button></p>
+  </div>
+  <div class="imgcolumn">
+   
+    <img src="images/smoothies.png" class="prodImg" alt="Orange-Kwench-400x400">
+    <p class="prodText">Smoothies Sweets<br>
+   Different Flavours</p>
+      <p style="font-size: 24px;font-weight: bold;">R15.00 <br><button onclick="addToCart('Smoothies Sweets', 15.00)"> Add</button></p>
+  </div>
+</div>
+
+<div>
+    <div>
+      <footer>
+        <p id="footer">One Stop Cash & Carry
+       <br>14 Stonelands Rd Hanover Park
+        <br>Cape Town,South Africa
+        <br>tel: +27(7)3 1158 870</p>
+        
+      </footer >
+    </div>
+  </div>
+
+</body>
+</html>

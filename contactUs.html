@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+<style>
+  body{
+  
+    font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      min-height: 200vh;
+      background-color: lightbeige;
+      display: flex;
+      flex-direction: column; 
+}
+
+.location{
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+    
+  h1{
+    font-size: 65px;
+    text-align: center;
+    color: #0d3417;
+
+  }
+  label{
+    margin-left: 10px;
+  }
+ input[type="text"],textarea,select{
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  margin-right: 10px;
+  margin-left: 10px;
+ 
+  
+ }
+ input[type=submit] {
+  background-color: #381b1e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+input[type=reset] {
+  background-color: rgb(228, 19, 40);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+input[type=submit]:hover {
+  background-color: #1c3f60;
+}
+  
+  #footer {
+  text-align: center;
+ right: 0;
+  background-color: rgb(17, 16, 16);
+  color: white;
+  position: static;
+  bottom: 0;
+  margin: 0;
+  padding: 20px;
+}
+#topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+ 
+}
+
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+
+}
+
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(26, 11, 100);
+  width: 100%;
+  z-index: 1;
+}
+
+#subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+#subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+#subnav:hover #subnav-content {
+  display: block;
+}
+  
+</style>
+</head>
+<body>
+  <div id="topnav">
+    <a id="active"href="home.html">Home</a>
+    <a href="support.html">Support</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="products.html">Products </a>
+    
+  
+
+
+  </div>
+  </div>
+  <div>
+<h1>
+  CONTACT US
+</h1>  
+<div>
+  <form action="mailto:hamzaabdirizak58@gmail.com" method="post" enctype="text/plain"  onsubmit=" return displayThankYouMessage() && requiredForm() " onreset="clearField()">
+ <label for="firstName">First Name</label><br>
+ <input type="text" placeholder="Enter your First Name" id="firstName" required><br>
+ <label for="lastName">Last Name</label><br>
+ <input type="text" placeholder="Enter your Last Name" id="lastName" required><br>
+ <label for="emailAddress">Email</label><br>
+ <input type="text" placeholder="Enter your Email Address" id="emailAddress" required><br>
+ <label for="city">City</label><br>
+        <select id="city" name="city">
+          <option value="hanoverpark">HanoverPark</option>
+          <option value="manenberg">Manenberg</option>
+          <option value="ottery">Ottery</option>
+        </select><br>
+ <label for="subject">Subject</label><br>
+ <textarea type="text"  placeholder="How can we assist you?" id="subject"style="height: 150px;"> </textarea><br>
+ <input type="submit" value="Submit" >
+ <input type="reset" value="Clear">
+</form>
+  </div>
+</div>
+<div>
+  <p class="location">Location</p>
+  <div class="google-map" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.8836657527813!2d18.526743875446293!3d-33.9955217731784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4558f286b1ef%3A0x6ebae7b39f9360b0!2sONE%20STOP%20CASH%20AND%20CARRY!5e0!3m2!1sen!2sza!4v1698958408399!5m2!1sen!2sza" width="100%" height="450" style="border:0; margin-right: 10px;margin-left: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div> 
+</div>
+ <div>
+  <footer>
+    <p id="footer">One Stop Cash & Carry
+   <br>14 Stonelands Rd Hanover Park
+    <br>Cape Town,South Africa
+    <br>tel: +27(7)3 1158 870</p>
+    
+  </footer >
+</div>
+<script>
+  
+  function displayThankYouMessage(){
+    alert('Thank you for contacting us! \n We will contact you soon.');
+    clearField();
+    return false;
+  }
+  function requiredForm() {
+    let firstName=document.getElementById('firstName').value;
+    let lastName=document.getElementById('lastName').value;
+    let emailAddress=document.getElementById('emailAddress').value;
+    let subject=document.getElementById('subject').value;
+    if (!firstName || !lastName || !emailAddress || !subject) {
+        alert('Please fill out all required fields');
+        return false;
+    }
+    return true;
+}
+function clearField(){
+  document.getElementById('firstName').value="";
+  document.getElementById('lastName').value="";
+  document.getElementById('emailAddress').value="";
+  document.getElementById('subject').value="";
+}
+</script>
+</body>
+</html>
